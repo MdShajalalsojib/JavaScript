@@ -6,3 +6,10 @@ const hena = {
 }
 const {name, frineds, status, age} = hena;
 console.log(age);
+
+
+
+const person = ["hero alom", {name:"gias"}, "hena", "bapparaj"];
+
+const [nayok, obj, iej ] = person;
+console.log(nayok)
