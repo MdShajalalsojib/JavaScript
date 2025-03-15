@@ -5,4 +5,7 @@ const person = {
     status:true,
 }
 const newPerson = JSON.stringify(person);
-console.log(typeof newPerson)
+// console.log( newPerson)
+
+const newPerson2 = JSON.parse(newPerson);
+console.log(newPerson2)
