@@ -16,11 +16,32 @@ if (age >= 18 && hasTicket) {
 //     console.log("You cannot enter the concert");
 // }
 
-let temp = 22;
-let isSunny = true;
+// let temp = 22;
+// let isSunny = true;
 
-if (temp > 20 && temp < 30 && isSunny) {
-    console.log("Perfect day for a picnic!");
+// if (temp > 20 && temp < 30 && isSunny) {
+//     console.log("Perfect day for a picnic!");
+// } else {
+//     console.log("Not ideal weather.");
+// }
+
+
+let temp = 25;
+
+if (temp > 20 && temp < 30) {
+    console.log("The weather is nice.");
+}
+
+let day = "Saturday";
+
+if (day === "Saturday" || day === "Sunday") {
+    console.log("It's weekend!");
+}
+
+let isRaining = true;
+
+if (!isRaining) {
+    console.log("Go outside!");
 } else {
-    console.log("Not ideal weather.");
+    console.log("Take an umbrella!");
 }
