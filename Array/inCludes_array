@@ -3,6 +3,15 @@ const friends = ['balam', 'kalam','lokman','chalam'];
 console.log(friends.includes('kalam'));
 console.log(friends.includes('balam'));
 
+console.log(friends.length);
+
+console.log(friends.pop());
+console.log(friends.push());
+console.log(friends.shift());
+console.log(friends.unshift());
+// console.log(friends.pop());
+
+
 if(friends.includes('lakman')){
     console.log('party');
 
