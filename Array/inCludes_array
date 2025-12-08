@@ -1,0 +1,12 @@
+const friends = ['balam', 'kalam','lokman','chalam'];
+
+console.log(friends.includes('kalam'));
+console.log(friends.includes('balam'));
+
+if(friends.includes('lakman')){
+    console.log('party');
+
+}
+else{
+    console.log('no food we are fasting');
+}
