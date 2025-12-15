@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+           #important_places{
+                color:cadetblue;
+           }
+           .fruits{
+            color:chartreuse;
+           }
     </style>
 </head>
 <body>
     <header>
-        <h1>Document Object Model</h1>
+        <h1 id="important_places">Document Object Model</h1>
     </header>
     <main>
         <h1>DOM Table</h1>
-        <ul>
+        <ul class="fruits">
             <li>Sojib</li>
             <li>Sakib</li>
             <li>lamiya</li>
@@ -31,6 +36,20 @@
         for (const h1 of hCollection){
             console.log(h1.innerText);
         }
+
+        // getElementById and getElementsByClassName
+
+        const fruitsTitle = document.getElementById(' important_places');
+        fruitsTitle.innerText = 'Fruits changed by js';
+
+        const places = document.getElementsByClassName('fruits');
+        for(const place of places){
+            console.log(place.innerText);
+        }
+
+        // querySeletorAll
+
+        
      </script>
 </body>
 </html>
