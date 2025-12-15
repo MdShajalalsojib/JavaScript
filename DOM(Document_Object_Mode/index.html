@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Document Object Model</h1>
+    </header>
+    <main>
+        <h1>DOM Table</h1>
+        <ul>
+            <li>Sojib</li>
+            <li>Sakib</li>
+            <li>lamiya</li>
+            <li>lima</li>
+        </ul>
+    </main>
+     <script src="getElementByTexName.js"></script>
+     <script>
+        const liCollection = document.getElementsByTagName('li');
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+        const hCollection = document.getElementsByTagName('h1');
+        for (const h1 of hCollection){
+            console.log(h1.innerText);
+        }
+     </script>
+</body>
+</html>
