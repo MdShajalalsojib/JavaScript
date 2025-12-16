@@ -14,7 +14,7 @@ const btnMake = document.getElementById('btn_make');
   }
 
 //   Option-------------04
-document.getElementById("btn").addEventListener('click',
+document.getElementById("btn").addEventListener('dblclick',
     function make(){
        document.getElementById("div1").innerHTML = `
            <div>
@@ -24,4 +24,8 @@ document.getElementById("btn").addEventListener('click',
        `
     }
 )
+document.getElementById("btn_login").addEventListener('click', function(){
+    const BtnLogin = document.getElementById("no_login");
+    BtnLogin.innerText = 'User login successfully';
+})
 
