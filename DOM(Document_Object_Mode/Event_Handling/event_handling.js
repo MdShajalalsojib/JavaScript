@@ -74,5 +74,23 @@ document.getElementById("btn_login").addEventListener('click', function(){
             
             commentTextBox.value = '';
 
-         })
+         });
+
+
+
+        //  Githud like Delete Confirmation 
+
+        document.getElementById('input_delete')
+        .addEventListener('keyup', function(event){
+            const text = event.target.value;
+            const btnDelete = document.getElementById('btn_delet');
+            if(text === 'delete'){
+                console.log('delete typed')
+                btnDelete.removeAttribute('disabled');
+            }
+            else{
+                console.log('something else');
+                btnDelete.setAttribute('disabled',true);
+            }
+        })
 
