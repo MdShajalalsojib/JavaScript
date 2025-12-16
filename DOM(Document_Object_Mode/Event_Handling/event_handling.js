@@ -13,3 +13,15 @@ const btnMake = document.getElementById('btn_make');
     document.body.style.backgroundColor = 'blue';
   }
 
+//   Option-------------04
+document.getElementById("btn").addEventListener('click',
+    function make(){
+       document.getElementById("div1").innerHTML = `
+           <div>
+             <h1>Sojib</h1>
+             
+           <div>
+       `
+    }
+)
+
