@@ -2,11 +2,18 @@ const handleLoadUser = () =>{
     fetch("https://jsonplaceholder.typicode.com/users")
      .then(res => res.json())
      .then(data =>{
-        console.log(data)
+         
         displayUseer(data)
      })
 }
 
 const displayUseer = (users) => {
-    console.log(users[4])
+    const userContainer = document.getElementById('users');
+
+    for (const user of users){
+        console.log(user.name)
+        const div = document.createElement("div");
+        div.innerText = user.name;
+        userContainer.appendChild(div);
+    }
 }
