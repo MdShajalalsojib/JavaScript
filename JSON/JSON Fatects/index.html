@@ -188,18 +188,37 @@
 }
 
 .card{
-    width: 300px;
+    width: 400px;
     padding: 20px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     text-align: center;
-    margin: 100px auto;
+    margin: 10px auto;
     color: #0077ff;
     font-size: large;
      
 
 }
+.post-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(2, auto);    
+    gap:80px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.div2{
+    width: 900px; 
+    margin:10px   ;
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    background: #00ffcc;
+}
+ 
 
     </style>
 </head>
@@ -217,20 +236,22 @@
            <h1 class="banner-text">HELLO....</h1>
            <h3>MY name is Md.Shajalal</h3>
            <p> Web Developer </p>
-           <button onclick="handleLoadData()" class="banner-batten"  > Click me</button>
-           <button onclick="handleLoadUser()" class="banner-batten"  > Loaduser</button>
-           <div class="card">
-            
-             <div id="users">
-
-             </div>
-
-           </div>
        </div>
        <div class="banner-img">
         <img src="img/WhatsApp Image 2024-01-09 at 23.07.28_50a5a6f4.jpg" alt="">
-       </div>
+       </div>   
     </main>
+     <section>
+         <div class="div2">
+            <button onclick="handleLoadData()" class="banner-batten"  > Click me</button>
+           <button onclick="handleLoadUser()" class="banner-batten"  > Loaduser</button>
+           <div id="users" class="post-container">
+            
+              
+
+           </div>
+         </div>
+       </section>
      <footer class="footer">
     <div class="footer-container">
 
